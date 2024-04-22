@@ -1,0 +1,69 @@
+<html>
+    <head> <title>Pagina De Cadastro</title>
+        <style>
+            div.centralizado {
+                text-align: center;
+            }
+            div{
+             
+                width: 500px;
+                height: 605px;
+                background-color: #5f504367; 
+                border-radius: 20px; 
+                margin: 0 auto; 
+            }
+            span
+            {   padding: 10px;
+                width: 500px; 
+                height: 900px; 
+                background-color: #000000; 
+                color: #ffffff; 
+                border: none; 
+                border-radius: 10px; 
+                cursor: pointer;
+            }
+            span{
+                font-size: 20px;
+            }
+            input[type="submit"] {
+                width: 100px; 
+                height: 40px; 
+                background-color: #000000; 
+                color: #ffffff; 
+                border: none; 
+                border-radius: 10px; 
+                cursor: pointer; 
+            }
+            input[type="reset"] {
+                width: 120px; 
+                height: 40px; 
+                background-color: #000000; 
+                color: #ffffff; 
+                border: none; 
+                border-radius: 10px; 
+                cursor: pointer; 
+            }
+        </style>
+    </head>
+    <body>
+        <form action="servidor.php" method="post">
+          <div class="centralizado">
+            <img src="cabo.jpg">
+            <h1>Cadastro de Cabo de Rede</h1>
+            <h2>Informe se o cabo par transado é:</h2>
+              <input type="radio" name="transado" value="STP" required> STP
+              <input type="radio" name="transado" value="UTP" required> UTP6
+              <h2>Informe qual é o modelo:</h2>
+              <input type="radio" name="modelo" value="Cat5e " required> Cat5e 
+              <input type="radio" name="modelo" value="Cat6 " required> Cat6 
+              <input type="radio" name="modelo" value="Cat6a" required> Cat6a 
+              <input type="radio" name="modelo" value="Cat7" required> Cat7 
+              <input type="radio" name="modelo" value="Cat8" required> Cat8   
+              <input type="radio" name="modelo" value="Cat8" required> Cat8 <br><br>
+              <input type="submit" value="Cadastrar"><br><br>
+              <input type="reset" value="Limpar Respostas"><br><br>
+              <a href="Pagina Central de Cadastros.html"><span>Voltar</a></span>
+        </form>
+        </div>
+    </body>
+</html>
