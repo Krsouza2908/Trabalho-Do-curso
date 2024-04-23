@@ -1,5 +1,14 @@
 <html>
     <head> <title>Pagina De Cadastro</title>
+        <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js"></script>
+        <script>
+            function GerarCódigoDeBarras(elementoInput){
+                if(!elementoInput.value){
+                    elementoInput.value = 0;
+                }
+                JsBarcode('#codBarras', elementoInput.value);
+            }
+        </script>
         <style>
             div.centralizado {
                 text-align: center;
@@ -7,7 +16,7 @@
             div{
              
                 width: 500px;
-                height: 815px;
+                height: 1085px;
                 background-color: #5f504367; 
                 border-radius: 20px; 
                 margin: 0 auto; 
@@ -59,6 +68,10 @@
                 <h2>Informe se a porta é gerenciavel ou não:</h2>
                 <input type="radio" name="resposta" value="sim"> Sim
                 <input type="radio" name="resposta" value="nao"> Não<br><br>
+                <h2>Digite um valor:</h2>
+                <input type="text" onblur="GerarCódigoDeBarras(this)" required><br>
+                <svg id="codBarras"></svg> <br>
+                <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
                 <input type="submit" value="Cadastrar"><br><br>
                 <input type="reset" value="Limpar Respostas"><br><br>
                 <a href="Pagina Central de Cadastros.html"><span>Voltar</a></span>
