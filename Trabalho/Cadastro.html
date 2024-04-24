@@ -1,0 +1,22 @@
+<html>
+    <head><title>Cadastro</title>
+        <h1>Cadastro de Cliente</h1>
+    </head>
+    <body>
+        <form action="servidor.php" method="post">
+            <h2>Nome:</h2>
+            <input type="text" name="nome" id="cd_nome" placeholder="Digite seu nome" required><br>
+            <h2>Informe sua Data de Nascimento</h2>
+            <input type="date" name="data" id="cd_data" required><br>
+            <h2>CPF</h2>
+            <input type="text" name="CPF" id="cd_CPF" placeholder="Digite seu CPF" required>
+            <h2>Endereço</h2>
+            <input type="text" name="endereco" id="cd_endereco" required>
+            <select name="estado" id="estado">
+                <option value="estado">Selecione o Estado</option>
+                
+              </select>
+              
+        </form>
+    </body>
+</html>
