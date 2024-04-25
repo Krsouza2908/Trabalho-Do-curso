@@ -1,0 +1,43 @@
+<html>
+    <head><title>Cadastro</title>
+         
+        <style>
+            div.centralizado {
+                text-align: center;
+            }
+            div{
+             
+                width: 220px;
+                height: 220px;
+                background-color: #5f504367; 
+                border-radius: 20px; 
+                margin: 0 auto; 
+            }
+            input[type="submit"] {
+                width: 100px; 
+                height: 40px; 
+                background-color: #000000; 
+                color: #ffffff; 
+                border: none; 
+                border-radius: 10px; 
+                cursor: pointer; 
+            }
+            h1 {
+                background-color: rgba(108, 125, 125, 0.546);
+                border-radius: 20px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <form action="servidor.php" method="post">
+            <div class="centralizado">
+                <h1>Contato</h1>   
+                <input type="text" name="nome" id="cd_nome" placeholder="Digite seu nome" required><br><br>
+                <input type="email" name="email" id="email" placeholder="Informe seu Email" required><br><br>
+                <input type="tel" name="cel" id="num" placeholder="Informe seu Número" required><br><br>
+                <input type="submit" value="Cadastrar" required>
+            </div>
+        </form>
+    </body>
+</html>
